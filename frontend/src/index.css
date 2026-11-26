@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-bank-navy text-white min-h-screen;
+  background-image: 
+    radial-gradient(ellipse at 20% 0%, rgba(107, 78, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 0%, rgba(247, 147, 26, 0.06) 0%, transparent 50%);
+}
+
+/* RainbowKit customization */
+[data-rk] {
+  --rk-colors-accentColor: #F7931A !important;
+  --rk-colors-accentColorForeground: #000 !important;
+  --rk-colors-actionButtonBorder: rgba(30, 52, 80, 1) !important;
+  --rk-colors-actionButtonBorderMobile: rgba(30, 52, 80, 1) !important;
+  --rk-colors-actionButtonSecondaryBackground: rgba(22, 36, 56, 1) !important;
+  --rk-colors-modalBackground: rgba(13, 27, 42, 1) !important;
+  --rk-colors-modalBorder: rgba(30, 52, 80, 1) !important;
+  --rk-colors-connectButtonBackground: rgba(22, 36, 56, 1) !important;
+  --rk-colors-connectButtonInnerBackground: rgba(22, 36, 56, 1) !important;
+  --rk-radii-connectButton: 12px !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { @apply bg-bank-navy; }
+::-webkit-scrollbar-thumb { @apply bg-bank-border rounded-full; }
+
+/* Utility classes */
+.card {
+  @apply bg-bank-card border border-bank-border rounded-2xl p-6;
+}
+
+.health-bar-fill {
+  transition: width 0.8s ease-in-out, background-color 0.3s ease;
+}

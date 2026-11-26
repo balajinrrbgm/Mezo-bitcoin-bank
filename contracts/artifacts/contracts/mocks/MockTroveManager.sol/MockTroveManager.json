@@ -1,0 +1,530 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MockTroveManager",
+  "sourceName": "contracts/mocks/MockTroveManager.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "CCR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "CCR_",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MCR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MCR_",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkRecoveryMode",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "debt_",
+          "type": "uint256"
+        }
+      ],
+      "name": "getBorrowingFeeWithDecay",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBorrowingRateWithDecay",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "b",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCurrentICR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "getEntireDebtAndColl",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getEntireSystemColl",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getEntireSystemDebt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "getNominalICR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTCR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "b",
+          "type": "address"
+        }
+      ],
+      "name": "getTroveColl",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "b",
+          "type": "address"
+        }
+      ],
+      "name": "getTroveDebt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "getTroveInterestOwed",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTroveOwnersCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "getTrovePrincipal",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "b",
+          "type": "address"
+        }
+      ],
+      "name": "getTroveStatus",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mockPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mockRecoveryMode",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mockTCR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mockTroveCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMockPrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "borrower",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "coll",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "debt_",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "status_",
+          "type": "uint8"
+        }
+      ],
+      "name": "setMockState",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tcr",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMockTCR",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "rm",
+          "type": "bool"
+        }
+      ],
+      "name": "setRecoveryMode",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "troveCollateral",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "troveDebt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "troveStatus",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052690cb49b44ba602d800000600355671bc16d674ec800006004556005805460ff1916815560065534801561003757600080fd5b506106ba806100476000396000f3fe608060405234801561001057600080fd5b50600436106101da5760003560e01c806384ae762411610104578063b91af97c116100a2578063dab6cbfe11610071578063dab6cbfe146104a2578063e6cfa17414610367578063f19ce185146104b0578063feca9cc0146104c357600080fd5b8063b91af97c14610412578063c7207e741461045d578063d293c71014610466578063d66a25531461047957600080fd5b806392905bf7116100de57806392905bf714610389578063997ee452146103ac578063b0d8e18114610367578063b82f263d146103fd57600080fd5b806384ae76241461035a57806385a43ca814610367578063887105d31461037b57600080fd5b806354b27ca11161017c5780636bc591a61161014b5780636bc591a6146102e6578063794e572414610306578063795d26c3146103155780637d08c9d81461032557600080fd5b806354b27ca11461029c5780635733d58f146102bc57806363f17574146102cb57806366ca4a21146102d957600080fd5b8063477d66cf116101b8578063477d66cf14610230578063480cd5781461024357806349eefeee1461026c5780634e443d9e1461027457600080fd5b80630463707a146101df578063111bda16146101fb57806321e3780114610204575b600080fd5b6101e860045481565b6040519081526020015b60405180910390f35b6101e860065481565b6101e8610212366004610568565b6001600160a01b031660009081526002602052604090205460ff1690565b6101e861023e36600461058a565b6104d6565b6101e8610251366004610568565b6001600160a01b031660009081526020819052604090205490565b6006546101e8565b61028c61028236600461058a565b5060055460ff1690565b60405190151581526020016101f2565b6101e86102aa366004610568565b60006020819052908152604090205481565b6101e86714d1120d7b16000081565b670f43fc2c04ee00006101e8565b662386f26fc100006101e8565b6101e86102f4366004610568565b60016020526000908152604090205481565b6101e8670f43fc2c04ee000081565b69152d02c7e14af68000006101e8565b610348610333366004610568565b60026020526000908152604090205460ff1681565b60405160ff90911681526020016101f2565b60055461028c9060ff1681565b6101e8610375366004610568565b50600090565b678ac7230489e800006101e8565b6103aa6103973660046105a3565b6005805460ff1916911515919091179055565b005b6103aa6103ba3660046105c5565b6001600160a01b0393909316600090815260208181526040808320949094556001815283822092909255600290915220805460ff191660ff909216919091179055565b6101e861040b36600461058a565b5060045490565b610430610420366004610568565b6000808080808091939550919395565b604080519687526020870195909552938501929092526060840152608083015260a082015260c0016101f2565b6101e860035481565b6101e8610474366004610613565b6104e9565b6101e8610487366004610568565b6001600160a01b031660009081526001602052604090205490565b6714d1120d7b1600006101e8565b6103aa6104be36600461058a565b600455565b6103aa6104d136600461058a565b600355565b60006104e360648361063d565b92915050565b6001600160a01b038216600090815260016020526040812054808203610514576000199150506104e3565b6001600160a01b038416600090815260208190526040902054819061053a90859061065f565b610544919061063d565b949350505050565b80356001600160a01b038116811461056357600080fd5b919050565b60006020828403121561057a57600080fd5b6105838261054c565b9392505050565b60006020828403121561059c57600080fd5b5035919050565b6000602082840312156105b557600080fd5b8135801515811461058357600080fd5b600080600080608085870312156105db57600080fd5b6105e48561054c565b93506020850135925060408501359150606085013560ff8116811461060857600080fd5b939692955090935050565b6000806040838503121561062657600080fd5b61062f8361054c565b946020939093013593505050565b60008261065a57634e487b7160e01b600052601260045260246000fd5b500490565b80820281158282048414176104e357634e487b7160e01b600052601160045260246000fdfea2646970667358221220698b043610502ae9cc0ac47f97a40d88460767281353872c4227b7b40e968cfc64736f6c63430008180033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101da5760003560e01c806384ae762411610104578063b91af97c116100a2578063dab6cbfe11610071578063dab6cbfe146104a2578063e6cfa17414610367578063f19ce185146104b0578063feca9cc0146104c357600080fd5b8063b91af97c14610412578063c7207e741461045d578063d293c71014610466578063d66a25531461047957600080fd5b806392905bf7116100de57806392905bf714610389578063997ee452146103ac578063b0d8e18114610367578063b82f263d146103fd57600080fd5b806384ae76241461035a57806385a43ca814610367578063887105d31461037b57600080fd5b806354b27ca11161017c5780636bc591a61161014b5780636bc591a6146102e6578063794e572414610306578063795d26c3146103155780637d08c9d81461032557600080fd5b806354b27ca11461029c5780635733d58f146102bc57806363f17574146102cb57806366ca4a21146102d957600080fd5b8063477d66cf116101b8578063477d66cf14610230578063480cd5781461024357806349eefeee1461026c5780634e443d9e1461027457600080fd5b80630463707a146101df578063111bda16146101fb57806321e3780114610204575b600080fd5b6101e860045481565b6040519081526020015b60405180910390f35b6101e860065481565b6101e8610212366004610568565b6001600160a01b031660009081526002602052604090205460ff1690565b6101e861023e36600461058a565b6104d6565b6101e8610251366004610568565b6001600160a01b031660009081526020819052604090205490565b6006546101e8565b61028c61028236600461058a565b5060055460ff1690565b60405190151581526020016101f2565b6101e86102aa366004610568565b60006020819052908152604090205481565b6101e86714d1120d7b16000081565b670f43fc2c04ee00006101e8565b662386f26fc100006101e8565b6101e86102f4366004610568565b60016020526000908152604090205481565b6101e8670f43fc2c04ee000081565b69152d02c7e14af68000006101e8565b610348610333366004610568565b60026020526000908152604090205460ff1681565b60405160ff90911681526020016101f2565b60055461028c9060ff1681565b6101e8610375366004610568565b50600090565b678ac7230489e800006101e8565b6103aa6103973660046105a3565b6005805460ff1916911515919091179055565b005b6103aa6103ba3660046105c5565b6001600160a01b0393909316600090815260208181526040808320949094556001815283822092909255600290915220805460ff191660ff909216919091179055565b6101e861040b36600461058a565b5060045490565b610430610420366004610568565b6000808080808091939550919395565b604080519687526020870195909552938501929092526060840152608083015260a082015260c0016101f2565b6101e860035481565b6101e8610474366004610613565b6104e9565b6101e8610487366004610568565b6001600160a01b031660009081526001602052604090205490565b6714d1120d7b1600006101e8565b6103aa6104be36600461058a565b600455565b6103aa6104d136600461058a565b600355565b60006104e360648361063d565b92915050565b6001600160a01b038216600090815260016020526040812054808203610514576000199150506104e3565b6001600160a01b038416600090815260208190526040902054819061053a90859061065f565b610544919061063d565b949350505050565b80356001600160a01b038116811461056357600080fd5b919050565b60006020828403121561057a57600080fd5b6105838261054c565b9392505050565b60006020828403121561059c57600080fd5b5035919050565b6000602082840312156105b557600080fd5b8135801515811461058357600080fd5b600080600080608085870312156105db57600080fd5b6105e48561054c565b93506020850135925060408501359150606085013560ff8116811461060857600080fd5b939692955090935050565b6000806040838503121561062657600080fd5b61062f8361054c565b946020939093013593505050565b60008261065a57634e487b7160e01b600052601260045260246000fd5b500490565b80820281158282048414176104e357634e487b7160e01b600052601160045260246000fdfea2646970667358221220698b043610502ae9cc0ac47f97a40d88460767281353872c4227b7b40e968cfc64736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
